@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Task Master</h1>
+    <br>
+    <br>
+    <div>
+        <input id="input" placeholder="Enter your task here" type="message">
+        <button onclick="add()">Add ToDo</button>
+        <br>
+        <br>
+        <ul id="list-container">
+            <li>New Todo
+                <button onclick="deleteitem(event)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var ul = document.getElementById("list-container")
+        var input = document.getElementById("input")
+        function add() {
+            var listitem = document.createElement("li")
+            listitem.innerHTML = input.value + " " + "<button onclick='deleteitem(event)'>Delete</button>"
+            ul.append(listitem)
+            input.value = "";
+        }
+
+        function deleteitem(event) {
+            event.target.parentElement.remove()
+        }
+    </script>
+</body>
+
+</html>

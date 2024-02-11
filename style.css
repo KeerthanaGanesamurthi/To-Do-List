@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    padding:50px;
+    text-align: center;
+    color:white;
+}
+
+h1{
+    background-color:slategray;
+    padding: 25px;
+    border-radius: 25px;
+    display:inline-block;
+    width:400px;
+}
+
+input{
+    width:200px;
+    border-radius: 5px;
+    height:20px;
+    margin-right: 20px;
+}
+div{
+    padding-top: 30px;
+    background-color: slategray;
+    border-radius: 25px;
+}
+
+div ul{
+    list-style: none;
+}
+
+button{
+    border-radius: 5px;
+    background-color: rgb(16, 16, 17);
+    width:75px;
+    color:white;
+    padding:2px;
+    justify-content: space-between;
+}
+div li{
+    margin-top: 15px;
+ }
