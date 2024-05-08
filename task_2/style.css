@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* to center vertically */
+}
+
+.container {
+    background-color: #f0f0f0; /* background color of the box */
+    padding: 20px;
+    border-radius: 10px; /* border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* box shadow for depth */
+}
+
+h1 {
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+#add-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#todo-list li label {
+    cursor: pointer;
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+#todo-list li button {
+    padding: 2px 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
